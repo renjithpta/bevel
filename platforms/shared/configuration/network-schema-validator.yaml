@@ -1,12 +1,6 @@
-##############################################################################################
-#  Copyright Accenture. All Rights Reserved.
-#
-#  SPDX-License-Identifier: Apache-2.0
-##############################################################################################
-
 ---
 #######################################
-# Playbook to validate Hyperledger Bevel network configurations
+# Playbook to validate Blockchain Automation Framework network configurations
 #  - checks for shared and DLT specific fields
 #######################################
   - hosts: ansible_provisioners
@@ -17,8 +11,6 @@
       npm: 
         name: ajv-cli
         global: yes
-        state: present        
-        production: no
     - set_fact:
         tempNetworkyaml: '{ "network": {{ network }} }'
     - name: "Ensures build dir exists"

@@ -4,7 +4,7 @@
 [//]: # (##############################################################################################)
 
 ## About
-This folder contains the files that are needed for the deployment of a Hyperledger Fabric network in Hyperledger Bevel. 
+This folder contains the files that are needed for the deployment of a Hyperledger Fabric network in BAF. 
 
 ## Folder structure
 ```
