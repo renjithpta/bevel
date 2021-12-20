@@ -1,6 +1,9 @@
 #!/bin/bash
 
+vault server -config=config.hcl
 vault secrets enable -version=1 -path=secret kv
+
+
 
 minikube config set memory 5096
 minikube config set kubernetes-version v1.16.13
